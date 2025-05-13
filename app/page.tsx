@@ -34,7 +34,7 @@ const staggerContainer = {
 export default function Portfolio() {
   return (
     <motion.div
-      className="min-h-screen bg-gradient-to-br from-wine to-wine/90 text-white-smoke"
+      className="min-h-screen bg-gradient-to-br from-wine to-wine/90 text-white-smoke flex flex-col items-center"
       initial="hidden"
       animate="visible"
       variants={fadeIn}
@@ -47,7 +47,7 @@ export default function Portfolio() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="container flex h-16 items-center justify-between py-4">
+        <div className="container max-w-5xl mx-auto flex h-16 items-center justify-between py-4">
           <motion.div
             className="flex items-center gap-2"
             whileHover={{ scale: 1.05 }}
@@ -106,7 +106,7 @@ export default function Portfolio() {
         </div>
       </motion.header>
 
-      <main className="container py-12 px-4 sm:px-6 lg:px-8 space-y-16">
+      <main className="container max-w-5xl mx-auto py-6 px-4 sm:px-6 lg:px-8 space-y-8 w-full">
         {/* Hero Section */}
         <motion.section
           className="py-20 md:py-32 container mx-auto"
@@ -122,7 +122,7 @@ export default function Portfolio() {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <motion.h1
-                className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
+                className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mt-0"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
@@ -429,12 +429,12 @@ export default function Portfolio() {
 
       {/* Footer */}
       <motion.footer
-        className="border-t border-white-smoke/10 py-8 px-4 sm:px-6 lg:px-8 bg-wine/80 backdrop-blur-sm"
+        className="border-t border-white-smoke/10 py-8 px-4 sm:px-6 lg:px-8 bg-wine/80 backdrop-blur-sm w-full"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.5 }}
       >
-        <div className="container flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="container max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <motion.div
             className="flex items-center gap-2"
             whileHover={{ scale: 1.05 }}
