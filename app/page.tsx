@@ -47,7 +47,7 @@ export default function Portfolio() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="container max-w-5xl mx-auto flex h-16 items-center justify-between py-4">
+        <div className="container max-w-7xl mx-auto flex h-16 items-center justify-between py-4">
           <motion.div
             className="flex items-center gap-2"
             whileHover={{ scale: 1.05 }}
@@ -106,7 +106,7 @@ export default function Portfolio() {
         </div>
       </motion.header>
 
-      <main className="container max-w-5xl mx-auto py-6 px-4 sm:px-6 lg:px-8 space-y-8 w-full">
+      <main className="container max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 space-y-8 w-full">
         {/* Hero Section */}
         <motion.section
           className="py-20 md:py-32 container mx-auto"
@@ -434,7 +434,7 @@ export default function Portfolio() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.5 }}
       >
-        <div className="container max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="container max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <motion.div
             className="flex items-center gap-2"
             whileHover={{ scale: 1.05 }}
